@@ -1,0 +1,33 @@
+package com.abhi.prep.java_advance;
+
+import java.util.Scanner;
+
+public class leadingzeroes {
+
+    static int leadingzeroes(int n){
+        int res=0;
+
+        for(int i=5;i<=n;i=i*5){
+            res=res+n/i;
+        }
+
+
+        /*for(int i=2;i<=n;i++){
+            fact = fact*i;
+        }
+        int res=0;
+        while(fact % 10==0){
+            res++;
+            fact=fact/10;
+        }*/
+
+
+        return res;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n= sc.nextInt();
+        System.out.println(leadingzeroes(n));
+    }
+}
