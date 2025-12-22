@@ -1,4 +1,4 @@
-package com.abhi.prep.java_advance;
+package com.abhi.prep.java_advance.Maths;
 
 public class countdigits {
 

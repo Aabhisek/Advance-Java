@@ -1,6 +1,6 @@
-package com.abhi.prep.java_advance;
+package com.abhi.prep.java_advance.Arrays;
 
-public class ArrayDeleteElement {
+public class DeleteElement {
     static int[] deletebyvalue(int arr[], int n){
 
         int index=-1; //means not present

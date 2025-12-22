@@ -1,6 +1,6 @@
-package com.abhi.prep.java_advance;
+package com.abhi.prep.java_advance.Arrays;
 
-public class ArrayLargestElement {
+public class LargestElement {
 
     static int largestelement(int arr[]){
         //consider first element as the largest element

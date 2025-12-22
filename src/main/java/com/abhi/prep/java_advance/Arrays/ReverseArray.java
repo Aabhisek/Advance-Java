@@ -1,8 +1,8 @@
-package com.abhi.prep.java_advance;
+package com.abhi.prep.java_advance.Arrays;
 
 import java.util.Arrays;
 
-public class ArrayReverse {
+public class ReverseArray {
     static int[] reversearray(int arr[]){
         int first=0;
         int last=arr.length-1;

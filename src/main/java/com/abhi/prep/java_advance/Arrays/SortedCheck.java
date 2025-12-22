@@ -1,6 +1,6 @@
-package com.abhi.prep.java_advance;
+package com.abhi.prep.java_advance.Arrays;
 
-public class ArraySortedCheck {
+public class SortedCheck {
 
     static boolean check4sortedarray(int arr[]){
         for(int i=0;i<arr.length;i++){

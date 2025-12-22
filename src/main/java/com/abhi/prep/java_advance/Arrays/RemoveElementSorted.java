@@ -1,8 +1,8 @@
-package com.abhi.prep.java_advance;
+package com.abhi.prep.java_advance.Arrays;
 
 import java.util.Arrays;
 
-public class ArrayElementRemoveSorted {
+public class RemoveElementSorted {
 
     static int removeelement(int arr[], int n){
 
