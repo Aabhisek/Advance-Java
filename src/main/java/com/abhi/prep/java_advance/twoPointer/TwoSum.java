@@ -16,27 +16,28 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 package com.abhi.prep.java_advance.twoPointer;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TwoSum {
 
     static int[] twosum(int [] nums,int target){
-        int[] res=new int[2];
-        for(int i=0;i<nums.length-1;i++){
-            for(int j=1;j<nums.length;j++){
-                if(nums[i]+nums[j]==target){
-                    res[0]=i;
-                    res[1]=j;
-                }
+        Map<Integer,Integer>map=new HashMap<>();
+        for(int i=0;i<nums.length;i++){
+            int lookingfor=target-nums[i];
+            if(map.containsKey(lookingfor)){
+                return new int[]{map.get(lookingfor),i};
             }
+
+                map.put(nums[i],i);
+
         }
 
-
-
-        return res;
+        return new int[]{-1,-1};
     }
 
     public static void main(String[] args) {
-        int [] nums={3,3};
+        int [] nums={3,2,4};
         int target=6;
         System.out.println(Arrays.toString(twosum(nums,target)));
     }
