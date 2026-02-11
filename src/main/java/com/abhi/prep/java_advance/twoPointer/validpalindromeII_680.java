@@ -14,7 +14,6 @@ public class validpalindromeII_680 {
             }
             i++;
             j--;
-
         }
         return true;
     }
